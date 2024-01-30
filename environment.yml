@@ -1,0 +1,34 @@
+name: fatiando
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.10.*
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - scikit-image
+  - xarray
+  - netcdf4
+  - jupyterlab
+  - black
+  - rich
+  - ipywidgets
+  # For building latex documents
+  - make
+  - tectonic
+  - latexdiff
+  # For stereonets
+  - mplstereonet
+  # Fatiando
+  - pooch
+  - verde
+  - harmonica>=0.6.0
+  - choclo
+  - ensaio
+  - boule
+  # GMT
+  - pygmt
+  # Pyproj
+  - pyproj
