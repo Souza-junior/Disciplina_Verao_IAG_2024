@@ -1,0 +1,129 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[colorlinks=true, citecolor=blue, linkcolor=black, urlcolor=blue]{hyperref}
+\usepackage{graphicx} %allow use \includegraphics
+\usepackage{amsthm}
+\usepackage{mathtools}
+% \usepackage{natbib}
+
+\usepackage[round,authoryear,sort]{natbib}
+% show dois as links on references
+\usepackage{doi}
+% Remove extra space between references
+\usepackage{references/natbibspacing}
+% Use a different font
+
+\usepackage[section]{placeins}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage[english, brazil]{babel}
+\usepackage{changepage}
+\usepackage{comment}
+\usepackage[doublespacing]{setspace}
+\usepackage{placeins}
+\usepackage{capt-of}
+\usepackage{caption}
+\usepackage{rotating}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{siunitx}
+
+\usepackage{booktabs}
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries}{\Roman{part}-\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\Roman{part}-\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\itshape}{\Roman{part}-\thesubsubsection}{1em}{}
+
+\usepackage{float}
+
+\usepackage{pdfpages}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{titletoc}
+
+
+\titlecontents{section}
+  [0pt] % Espaço esquerdo
+  {} % Espaço acima
+  {} % Formato do título (neste caso, vazio)
+  {} % Espaço entre o título e o número da página
+  {} % Formato do número da página
+  [\vspace{1ex}] % Espaço após cada entrada
+
+\begin{document}
+
+\input{content/titlepage.tex}
+\input{content/abstract.tex}
+
+\listoffigures
+
+\listoftables
+\newpage
+
+\tableofcontents
+\newpage
+
+    
+%\part{Research groundwork}\label{content}
+% This section of the monograph is devoted to describing the foundational aspects of the research, which led to the submission of a scientific paper to Geophysics, Geochemistry, and Geosystems.
+
+\input{content/introduction.tex}
+\input{content/methodology.tex}
+\input{content/partial_results.tex}
+\input{content/discussion.tex}
+\input{content/conclusion.tex}
+
+
+\newpage
+\singlespacing
+\bibliographystyle{references/apalike-doi}
+\bibliography{references/cas-refs}
+
+\newpage
+
+
+% \section*{}
+
+% \vfill  % Espaço vertical automático
+% \thispagestyle{empty}  % Remove cabeçalho e rodapé desta página
+
+% \begin{center}
+% \begin{tabular}{c}
+%   \toprule
+%   \newline \\
+%   \Huge\bfseries\fontsize{20}{20}\selectfont{LATINMAG EXTENDED ABSTRACT} \\
+%   \newline \\
+%   \bottomrule
+% \end{tabular}
+% \end{center}
+
+% \vfill  % Espaço vertical automático
+% \newpage  % Pula para uma nova página
+% \includepdf[pages=-]{PDF/GEOMGF_GFSJ_1.pdf}
+
+
+% %%%%%%%%%%%%%
+% \newpage
+% \section*{}
+% \vfill  % Espaço vertical automático
+% \thispagestyle{empty}  % Remove cabeçalho e rodapé desta página
+
+% \begin{center}
+% \begin{tabular}{c}
+%   \toprule
+%   \newline \\
+%   \Huge\bfseries\fontsize{20}{20}\selectfont{EGU ABSTRACT} \\
+%   \newline \\
+%   \bottomrule
+% \end{tabular}
+% \end{center}
+
+% \vfill  % Espaço vertical automático
+% \newpage  % Pula para uma nova página
+
+% \includepdf[pages=-]{PDF/EGU23-4479-print.pdf}
+
+% 
+\end{document}

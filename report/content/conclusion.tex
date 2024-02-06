@@ -1,0 +1,21 @@
+\section{Conclusion}
+
+We developed an efficient semi-automated method to determine the direction of magnetization of dipolar sources on a microscale, as well as the estimate of their magnetic moment.
+Being ideal for a reinterpretation for the application of methods of paleomagnetic studies using thin sections of rock samples.
+This would be an attempt to improve the quality of results obtained by isolating the responses of more reliable recorders of the Earth's geomagnetic field.
+
+We also present a new, faster, and cleaner way to solve the Euler equation in determining the positioning of magnetic anomaly sources using a pre-selection of magnetic anomaly source windows based on the Laplacian of Gaussian applied to total gradient anomaly maps.
+In this way, reducing the numerous solutions to just one data window per source.
+After estimating the structural index ($n = 3$) by approximating the sources generating the magnetic anomaly to spheres/points, the Euler Deconvolution is performed, and the central position of each source is determined.
+Due to the similarity with aeromagnetic data, this approach can also be extrapolated for macro-scale studies.
+
+To recover magnetic direction and moment we only need to assume that the sources have their central positions known (so we apply Euler deconvolution) and that their magnetization is uniform.
+This last premise aligns with the theory of magnetically stable particles SD, and by extension the PSD ones at a reasonable sensor-sample height, which is the basis of classical paleomagnetism.
+Also, there is no need for any kind of prior knowledge other than the observed magnetic anomaly, and the structural index of the sources.
+Therefore, this method can be quickly replicated in a data set of thin sections of rocks to obtain the distributions of magnetic directions of each source identified in the sample.
+
+The test using a simple synthetic sample shows the great capability of the method by estimating not only the precise center positions but also retrieving the magnetization directions and intensity even under the considerable effect of high-frequency noise, for both dipolar and non-dipolar sources.
+While the complex synthetic sample data allows observing the applicability of the method developed in real samples that are more complex with varied magnetization directions and intensity, in addition to also taking into account the high and low-frequency noise and sources with variable dipole moment intensities and depths.
+The real sample data positively answered the question of the algorithm's ability to deal with thin sections of rocks.
+But also, showed the acceptable capacity of retrieving different magnetization directions recorded by magnetic minerals with different coercivities and magnetic signal disparities even greater than predicted in the complex synthetic test.
+We also assessed the quality of the fit between the predicted dipole model and the original magnetic data using two criteria: the coefficient of determination ($R^2$) and the signal-to-noise ratio (SNR).
