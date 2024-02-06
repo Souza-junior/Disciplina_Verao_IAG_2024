@@ -1,0 +1,70 @@
+\section{Introduction}\label{sec:intro}
+
+Several branches of Earth Sciences have demonstrated the importance of spatial resolution on a microscopic scale. For example, geochemistry and
+geochronology applications have benefited from point-wise analyses
+and compositional maps, allowing significant advances in the understanding of
+igneous, metamorphic and sedimentary processes \citep{Verberne2020, Barnes2019,
+Davidson2007}. Classical paleomagnetic techniques, on the other hand, consist
+of analyzing bulk samples, where the magnetic signal of a single specimen is
+the result of the sum of moments of a large assembly of ferromagnetic grains
+\citep{Dunlop1997}. Typically, a standard paleomagnetic sample of
+approximately \qty{10}{\cm\cubed} would contain hundreds of thousands
+to millions of magnetic particles with sizes varying from magnetically stable
+single-domain (SD) and vortex state grains (also called pseudo-single domain,
+PSD) with sizes below \qty{1}{\um}, to large ($\gg \qty{1}{\um}$) grains with
+multi-domain (MD) magnetic structures, which are less stable magnetic recorders
+\citep{Berndt2016}. These large MD grains usually conceal the signal of the SD
+and PSD grains, and techniques of step-wise thermal and magnetic treatments are
+needed to unveil this more stable and reliable magnetic record
+\citep{Tauxe2018}. Recently, magnetic microscopy techniques opened the
+possibility of obtaining magnetic field maps at the micro-scale and recovering the
+magnetization of each grain, therefore enabling the separate analysis of stable
+and unstable magnetic particles \citep{DeGroot2018, Lima2014, Weiss2007,
+DeGroot2014}.
+
+In order to apply magnetic microscopy to paleomagnetic studies, it is necessary
+to recover from the magnetic images a large number of individual magnetic
+moments, corresponding to at least tens of thousands of stable fine-grained
+grains ($< \qty{1}{\um}$), in order to provide statistical significance to the
+remanence vector \citep[e.g., ][]{Berndt2016}. Nowadays, with the development of
+magnetic microscopy techniques, this task is no longer limited by the
+resolution of magnetic microscopes \citep{Fu2020, Weiss2007, DeGroot2018,
+Glenn2017, Lima2014}, but essentially by the intrinsic problem presented by the
+ambiguity in the inversion of potential field data \citep{Barbosa2011,
+DeGroot2021, Oliveira2015Estimation}, and ultimately by the lack of a fast and
+automated way to recover such a large number of individual magnetic moments
+from a set of magnetic images \citep{CortesOrtuno2022, Lima2013, Lima2009}. A
+solution to the non-uniqueness of magnetic moment inversion is to add
+independent prior information, such as the position of the ferromagnetic
+particles \citep{Fabian2019}. This can be obtained, for example, from X-ray
+computed tomography \citep[microCT; ][]{Fabian2019, DeGroot2021, DeGroot2018}.
+Nonetheless, the standard microCT techniques do not provide adequate resolution
+to resolve the finer and more stable magnetic grains \citep{CortesOrtuno2022,
+DeGroot2021}, whereas other more sophisticated techniques such as ptychographic
+X-ray tomography \citep[e.g., ][]{Maldanis2020} are not readily available and
+too time-consuming to be routinely used in paleomagnetic studies.
+
+Another route to be explored in the inversion of magnetic microscopy images is
+to obtain all the information, i.e. the magnetic moment and the position of the
+sources, from the magnetic data itself \citep[e.g., ][]{Fu2020}. For that, we can
+explore the techniques developed in exploration geophysics, in spite of the
+differences between aeromagnetic surveys and magnetic microscopy
+\citep{Lima2013}. Magnetic microscopy images commonly show the combined signal
+of multiple magnetic particles and can vary greatly in wavelength, strength,
+and spatial separation, depending on the natural remanent magnetization (NRM) and location of each particle. We
+usually assume that the signal measured by the magnetic microscope is the
+vertical component of the magnetic induction vector ($b_z$), the measurements
+are performed on a regular grid with evenly spaced grid points and at a
+constant height, and the data are contaminated with pseudorandom Gaussian noise and
+long-wavelength noise (akin to a regional signal in aeromagnetic data). Here,
+we provide a methodological routine to retrieve the individual magnetic moment
+of ferromagnetic grains in magnetic microscopy images following the approach
+devised by \citet{Oliveira2015Estimation} for the interpretation of
+aeromagnetic anomalies. The method we propose allows one to quickly and
+semi-automatically estimate the individual magnetic moment vector of the stable
+magnetic carriers, making use of only the magnetic images themselves and an
+assumption of approximately dipolar sources. If used on a large scale, the
+method provides the means to scan large areas of the rock sample, attaining
+potentially the number of magnetic moments necessary for paleomagnetic studies.
+
+
