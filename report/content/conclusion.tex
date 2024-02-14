@@ -1,2 +1,10 @@
-\section{Conclusion}
+\section{Final Remarks}
+The obtained results align seamlessly with the geological characteristics of the SAIC. The presence of positive peaks directly corresponds to the mafic cores, while positive values observed over the mixture zone and negative values along the granitic borders further reinforce the consistency of the applied technique. These findings not only validate the efficacy of the equivalent layer methodology employed but also the interpolated residual product does not show the typical edge effect associated with 2D interpolation. The success of this gravity processing approach underscores its potential as a reliable tool for investigating the SAIC's (and other intrusive bodies) subsurface structures in future gravimetric modeling.
 
+\newpage
+\section*{Data and Code Availability}
+
+The Python source code used to produce all results and figures presented here is available at \url{https://github.com/Souza-junior/Disciplina_Verao_IAG_2024} under the MIT open-source license. The SAIC's gravimetric ground survey data are available at \url{https://doi.org/10.6084/m9.figshare.25215725} under the CC-0 license.
+
+
+We used all open-source packages in the Jupyter Notebook programming environment \citep{Kluyver2016}. We performed coordinates manipulations, generated regular grids, and data interpolation with the aid of Verde \citep{verde2018}. Boule package \citep{Boule2020} for calculation of the normal gravity. Harmonica package \citep{harmonica2020} was used in the terrain gravity effects correction and also for the equivalent layer technique. The orthometric and geoid models were acquired from the GMT database \citep{gmt} and the map generation was handled by the PyGMT package \citep{pygmt}.
